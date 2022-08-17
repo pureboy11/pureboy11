@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+.main-img {
+  height: 400px;
+  background-image: url('./img/bg.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.NFTs {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CenterBtn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.filter {
+  float: right;
+  text-align: right;
+}
+
+.totalPrice {
+  position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 8px;
+
+}
+
+.latestNews {
+  position: absolute;
+  margin-left: 1650px;
+
+
+}
