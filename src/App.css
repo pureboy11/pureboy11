@@ -4,10 +4,11 @@
 
 .main-img {
   height: 400px;
-  background-image: url('./img/bg.png');
+  background-image: url('./img/Top-10-PFBs-.webp');
   background-size: cover;
   background-position: center;
   position: relative;
+  width: 100%;
 }
 
 .NFTs {

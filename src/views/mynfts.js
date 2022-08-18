@@ -1,34 +1,22 @@
-import './App.css';
 import { useState } from 'react';
 import { ListGroup, Badge, ButtonGroup, ToggleButton, Toast, ToastContainer} from 'react-bootstrap';
-import nftdata from './nftData.js';
-import { Routes, Route, Outlet } from 'react-router-dom';
+import nfts from './nftData.js';
 import NftList from './views/nftlist';
-import TnavBar from './views/tnavbar';
-import Detail from './views/detail';
-import axios from 'axios';
 
 
 
-
-function App() {
-  const [radioValue, setRadioValue] = useState('1');
-  const radios = [
-    { name: 'Newest NFT', value: '1' },
-    { name: 'Highest Price', value: '2' },
-    { name: 'Increase in Value', value: '3' }
-  ];
-
-  let [nfts, moreNfts] = useState(nftdata);
+function MyNfts() {
+    const [radioValue, setRadioValue] = useState('1');
+    const radios = [
+        { name: 'Newest NFT', value: '1' },
+        { name: 'Highest Price', value: '2' },
+        { name: 'Increase in Value', value: '3' }
+    ];
 
 
-  return (
-  <>
-    <TnavBar/>
-    <Routes>
-      <Route path="/mynfts" element= {
-      <>
-        <div className="main-img">
+    return (
+    <>
+    <div className="main-img">
         <ToastContainer className="totalPrice">
           <Toast>
             <Toast.Header closeButton={false}>
@@ -123,54 +111,15 @@ function App() {
         {
           nfts.map((a, i) => {
             return (
-              <NftList nfts={nfts[i]} i={i} key={nfts}></NftList>
+              <NftList nfts={nfts[i]} i={i}></NftList>
             )
           })
         }
       </div>
-      <button onClick={()=> {
-        axios.get('http://codingapple1.github.io/shop/data2.json')
-        .then((result)=>{
-          let copy = [...nfts, ...result.data];
-          moreNfts(copy);
-        })
-        .catch(()=>{
-          console.log('실패함 ㅅㄱ')
-        })
-
-      }}>더보기</button>
     </div>
-  </>}/>
+    </>
+    )
+  };
 
-  <Route path="/" element= {<div>Home</div>} />
-  <Route path="/auction" element= {<div>auction</div>} />
-  <Route path="/explorer" element= {<div>explorer</div>} />
-  <Route path="/wallet" element= {<div>wallet</div>}>
-    <Route path="metamask" element= {<div>metamask</div>} />
-    <Route path="kaikas" element= {<div>kaikas</div>} />
-  </Route>
-  <Route path="/account" element= {<div>account</div>}>
-    <Route path="profile" element= {<div>profile</div>} />
-    <Route path="setting" element= {<div>setting</div>} />
-  </Route>
-  <Route path="/detail" element= {<Detail/>} />
-  <Route path="/detail/:id" element= {<Detail nfts={nfts} />} />
-  <Route path="/event" element= {<Event/>} >
-    <Route path="event1" element= {<div>코인 2배 이벤트</div>} />
-    <Route path="event2" element= {<div>코인 4배 이벤트</div>} />
-  </Route>
-  </Routes>
-  </>
-  );
-};
+  export default MyNfts;
 
-function Event() {
-  return (
-    <div>
-      <h4>오늘의 이벤트</h4>
-      <Outlet></Outlet>
-    </div>
-  )
-}
-
-export default App;
