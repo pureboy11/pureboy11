@@ -11,4 +11,3 @@ function MyNfts() {
 };
 
   export default MyNfts;
-

@@ -1,17 +1,23 @@
 import { Button, Card } from 'react-bootstrap';
 
-function Auctionlist() {
 
+function Auctionlist() {
     return (
         <>
             <Card className="auction">
-                <Card.Header>Featured</Card.Header>
+                <Card.Header> Minting of the new Bong Bear!  </Card.Header>
                 <Card.Body>
-                    <Card.Title>Special title treatment</Card.Title>
+                    <Card.Title>Special Deal </Card.Title>
+                    <img
+                        src="https://img.seadn.io/files/070b7ca4bb51d07d6b6f776bcb1eed56.jpg?fit=max&w=600"
+                        alt="NFT"
+                        style={{ width: '10%' }}
+                    />
                     <Card.Text>
-                        With supporting text below as a natural lead-in to additional content.
+                        Minting conditions: Holders with more than 10 NFTs only
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary" onClick={() => window.open('https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/66075445032688988859229341194671037535804503065310441849644897884130615754753', '_blank')}>
+                        Go to OpesnSea</Button>
                 </Card.Body>
             </Card>
         </>
