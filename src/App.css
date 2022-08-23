@@ -11,8 +11,35 @@
   width: 100%;
 }
 
+.home-img {
+  height: 800px;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8a0c1203-0ec5-45a8-a85d-3d01b8a19798/der7vea-6948990e-9974-4bc8-918b-565e46378b03.jpg/v1/fill/w_1280,h_458,q_75,strp/nft_banner_by_mailw303_der7vea-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDU4IiwicGF0aCI6IlwvZlwvOGEwYzEyMDMtMGVjNS00NWE4LWE4NWQtM2QwMWI4YTE5Nzk4XC9kZXI3dmVhLTY5NDg5OTBlLTk5NzQtNGJjOC05MThiLTU2NWU0NjM3OGIwMy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3oDToxqxuDl88t1FmYdyhjWVYAOKlxp6LAnI5zsn0ss");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+}
+
+
+.wallet-icon {
+  width: 18rem;
+  margin: 1rem;
+  float: left;
+
+}
+
+.wallet-img {
+  height: 50px;
+  width: 10%;
+  position: relative;
+  float: left;
+}
+
+
 .NFTs {
   margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,23 +52,65 @@
   align-items: center;
 }
 
+.contentArea {
+  height: 800px;
+  float: bottom;
+  position: relative;
+}
+
 
 .filter {
   float: right;
   text-align: right;
 }
 
+
 .totalPrice {
   position: relative;
   float: right;
-  margin-right: 1%;
-  margin-top: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+
 
 }
 
 .latestNews {
   position: absolute;
-  margin-left: 1650px;
+  margin-left: 1670px;
+  margin-top: 10px;
 
+
+}
+
+.footer {
+  background-color: #26272b;
+  margin-top: auto;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+
+
+.wallet-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 15px;
+  width: 25%;
+  border: 7px solid rgba(41, 189, 142, 0.848);
+  border-radius: 5px;
+}
+
+.auction {
+
+
+
+  margin: auto;
+  margin-top: 15px;
+  width: 90%;
+
+  border-radius: 5px;
 
 }
