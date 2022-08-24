@@ -12,7 +12,7 @@ function LogInForm() {
     return (
         <>
             <Button variant="primary" onClick={handleShow}>
-                Log In
+                Sign in
             </Button>
 
             <Modal
@@ -22,7 +22,7 @@ function LogInForm() {
                 keyboard={false}
             >
                 <Modal.Header closeButton>
-                    <Modal.Title>Log In</Modal.Title>
+                    <Modal.Title>Sign in</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form>
@@ -51,7 +51,7 @@ function LogInForm() {
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="primary" type="submit">
-                        Log In
+                        Sign in
                     </Button>
                     <Button variant="secondary" onClick={handleClose}>
                         Close

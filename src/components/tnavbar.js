@@ -27,11 +27,11 @@ function TnavBar() {
                     Total NFT
                 </Navbar.Brand>
                 <Nav className="me-auto">
-                    <Nav.Link onClick={() => { navigate('/auction') }}>Auction /</Nav.Link>
-                    <Nav.Link onClick={() => { navigate('/mynfts') }}>My NFTs /</Nav.Link>
-                    <Nav.Link onClick={() => { navigate('/explorer') }}>Explorer /</Nav.Link>
-                    <Nav.Link onClick={() => { navigate('/wallet') }}>Wallet /</Nav.Link>
-                    <Nav.Link onClick={() => { navigate('/account') }}>Account /</Nav.Link>
+                    <Nav.Link onClick={() => { navigate('/auction') }} className="margin-r">Auction </Nav.Link>
+                    <Nav.Link onClick={() => { navigate('/mynfts') }} className="margin-r">My NFTs </Nav.Link>
+                    <Nav.Link onClick={() => { navigate('/explorer') }} className="margin-r">Explorer </Nav.Link>
+                    <Nav.Link onClick={() => { navigate('/wallet') }} className="margin-r">Wallet </Nav.Link>
+                    <Nav.Link onClick={() => { navigate('/account') }} className="margin-r">Account </Nav.Link>
                 </Nav>
 
                 <LogInForm />

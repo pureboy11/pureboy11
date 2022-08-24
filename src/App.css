@@ -22,12 +22,30 @@
 }
 
 .home-img {
-  height: 870px;
+  height: 600px;
   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8a0c1203-0ec5-45a8-a85d-3d01b8a19798/der7vea-6948990e-9974-4bc8-918b-565e46378b03.jpg/v1/fill/w_1280,h_458,q_75,strp/nft_banner_by_mailw303_der7vea-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDU4IiwicGF0aCI6IlwvZlwvOGEwYzEyMDMtMGVjNS00NWE4LWE4NWQtM2QwMWI4YTE5Nzk4XC9kZXI3dmVhLTY5NDg5OTBlLTk5NzQtNGJjOC05MThiLTU2NWU0NjM3OGIwMy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3oDToxqxuDl88t1FmYdyhjWVYAOKlxp6LAnI5zsn0ss");
   background-size: cover;
   background-position: center;
   position: relative;
   width: 100%;
+}
+
+.home-desc {
+  height: 500px;
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  color : white;
+  text-align: center;
+}
+
+.home-box {
+  border : 3px solid white;
+  border-radius: 5px;
+  height : 250px;
+  margin-top: 20px;
 }
 
 
@@ -108,6 +126,32 @@
   margin : 30px;
   color : black;
 }
+
+.home-title {
+  text-align: right;
+  text-shadow: 5px;
+  color : white;
+  position: absolute;
+  top : 75px;
+  right: 400px;
+
+}
+
+.home-subtitle {
+  text-align: right;
+  color : yellow;
+  position: absolute;
+  top: 150px;
+  right : 400px;
+}
+
+.home-btn {
+  position: absolute;
+  top: 220px;
+  right : 400px;
+}
+
+
 
 .wallet-banner {
   display: flex;
