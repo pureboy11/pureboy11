@@ -11,8 +11,18 @@
   width: 100%;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+}
+
+.contentWrapper{
+  flex: 1;
+}
+
 .home-img {
-  height: 800px;
+  height: 870px;
   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8a0c1203-0ec5-45a8-a85d-3d01b8a19798/der7vea-6948990e-9974-4bc8-918b-565e46378b03.jpg/v1/fill/w_1280,h_458,q_75,strp/nft_banner_by_mailw303_der7vea-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDU4IiwicGF0aCI6IlwvZlwvOGEwYzEyMDMtMGVjNS00NWE4LWE4NWQtM2QwMWI4YTE5Nzk4XC9kZXI3dmVhLTY5NDg5OTBlLTk5NzQtNGJjOC05MThiLTU2NWU0NjM3OGIwMy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3oDToxqxuDl88t1FmYdyhjWVYAOKlxp6LAnI5zsn0ss");
   background-size: cover;
   background-position: center;
@@ -52,11 +62,7 @@
   align-items: center;
 }
 
-.contentArea {
-  height: 800px;
-  float: bottom;
-  position: relative;
-}
+
 
 
 .filter {
@@ -91,6 +97,17 @@
   color: #737373;
 }
 
+.auction-title {
+  text-align: center;
+  margin : 30px;
+  color : blue;
+}
+
+.auction-subtitle {
+  text-align: center;
+  margin : 30px;
+  color : black;
+}
 
 .wallet-banner {
   display: flex;
@@ -103,10 +120,15 @@
   border-radius: 5px;
 }
 
+.auction-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
 .auction {
-
-
-
   margin: auto;
   margin-top: 15px;
   width: 90%;
@@ -118,4 +140,10 @@
 
 .margin-r {
   margin-right: 10px;
+}
+
+.text-r {
+  display: flex;
+  justify-content: right;
+  color : red;
 }

@@ -15,7 +15,7 @@ function Wallet(props) {
     };
 
     return (
-        <div className="contentArea">
+        <div>
             <div className="wallet-banner">
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                     <Carousel.Item>
@@ -64,7 +64,6 @@ function Wallet(props) {
                         )
                     })
                 }
-
             </div>
         </div>
     )

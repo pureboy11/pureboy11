@@ -3,7 +3,6 @@ import Carousel from 'react-bootstrap/Carousel';
 function Explorer() {
 
     return (
-        <div className="contentArea">
             <div>
                 <Carousel>
                     <Carousel.Item>
@@ -45,7 +44,6 @@ function Explorer() {
                     </Carousel.Item>
                 </Carousel>
             </div>
-        </div>
     );
 }
 

@@ -41,7 +41,7 @@ function LogInForm() {
                         <Form.Group className="mb-3" controlId="formBasicCheckbox">
                             <Form.Check type="checkbox" label="Check me out" />
                         </Form.Group>
-                        <Button variant="primary">
+                        <Button variant="success" style={{marginRight : '10px'}}>
                             Google
                         </Button>
                         <Button variant="primary">

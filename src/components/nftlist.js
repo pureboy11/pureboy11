@@ -1,3 +1,4 @@
+import React from 'react';
 import { Card, ListGroup, Button, Badge } from 'react-bootstrap';
 
 function NftList(props) {

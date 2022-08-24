@@ -1,6 +1,6 @@
 function Home() {
     return (
-        <div className="contentArea">
+        <div>
             <div className="home-img"></div>
         </div>
     )

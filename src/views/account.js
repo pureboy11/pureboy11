@@ -1,6 +1,6 @@
 function Account() {
     return (
-        <div className="contentArea">
+        <div>
         </div>
     )
 };

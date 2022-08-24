@@ -1,10 +1,11 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './css/footer.css';
 
 function Footer() {
     return (
         <div className='footer-container'>
-            <section className="footer-subscription">
+            {/* <section className="footer-subscription">
                 <p className="footer-subscription-heading">
                     Join to hear about new Total NFT news.
                 </p>
@@ -53,7 +54,7 @@ function Footer() {
                         <Link to='/'>Twitter</Link>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <section className="social-media">
                 <div className="social-media-wrap">
                     <div className="footer-logo">
@@ -91,7 +92,7 @@ function Footer() {
                             <i className='fab fa-twitter' />
                         </Link>
                         <Link
-                            class='social-icon-link twitter'
+                            className='social-icon-link twitter'
                             to='/'
                             target='_blank'
                             aria-label='LinkedIn'
