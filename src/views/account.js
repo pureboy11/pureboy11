@@ -1,6 +1,9 @@
+import LineCharts from "../components/LineCharts";
+
 function Account() {
     return (
-        <div>
+        <div className="contentArea">
+            <LineCharts />
         </div>
     )
 };

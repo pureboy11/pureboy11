@@ -17,13 +17,13 @@ function TnavBar() {
         <Navbar bg="dark" variant="dark">
             <Container>
                 <Navbar.Brand onClick={() => { navigate('/.') }} style={{ cursor: 'pointer' }}>
-                    {/* <img }
-            alt=""
-            src="../public/logo192.png"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-        />{' '*/}
+                    <img
+                        alt=""
+                        src="../public/logo192.png"
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                    />
                     Total NFT
                 </Navbar.Brand>
                 <Nav className="me-auto">
@@ -36,7 +36,6 @@ function TnavBar() {
 
                 <LogInForm />
                 <div className="margin-r" />
-
                 <Button variant="primary" onClick={handleShow}>
                     Contact Us
                 </Button>

@@ -41,7 +41,7 @@ function LogInForm() {
                         <Form.Group className="mb-3" controlId="formBasicCheckbox">
                             <Form.Check type="checkbox" label="Check me out" />
                         </Form.Group>
-                        <Button variant="success" style={{marginRight : '10px'}}>
+                        <Button variant="success" style={{ marginRight: '10px' }}>
                             Google
                         </Button>
                         <Button variant="primary">
@@ -50,6 +50,9 @@ function LogInForm() {
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
+                    <Button variant="primary">
+                        Sign up
+                    </Button>
                     <Button variant="primary" type="submit">
                         Sign in
                     </Button>

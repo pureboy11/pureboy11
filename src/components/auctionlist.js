@@ -5,7 +5,7 @@ function Auctionlist() {
     return (
         <>
             <Card className="auction">
-                <Card.Header> Minting of the new Bong Bear! <span className="text-r">⏰03:22:11</span>  </Card.Header>
+                <Card.Header> <h5> Minting of the new Bong Bear!</h5> <p className="text-r">⏰03:22:11</p>  </Card.Header>
                 <Card.Body>
                     <Card.Title>Special Deal </Card.Title>
                     <img

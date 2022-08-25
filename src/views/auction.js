@@ -20,19 +20,8 @@ function Auction() {
             <h4 className="auction-title">UPCOMING NFT MINTS!</h4>
             <h2 className="auction-subtitle"> YOU CAN FIND ALL UPCOMING NFTs</h2>
 
+
             <ButtonToolbar className="mb-3, auction-filter" aria-label="Toolbar with Button groups">
-                <InputGroup className="margin-r">
-                    <InputGroup.Text id="basic-addon1">Finder</InputGroup.Text>
-                    <Form.Control
-                        placeholder="Search NFT Category or Name"
-                        aria-label="Username"
-                        aria-describedby="basic-addon1"
-                        style = {{width: '300px'}}
-
-                    />
-
-
-                </InputGroup>
                 <ButtonGroup>
                     <DropdownButton as={ButtonGroup} title="Category" id="bg-nested-dropdown">
                         <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
@@ -42,7 +31,7 @@ function Auction() {
                         <Dropdown.Item eventKey="5">Dropdown link</Dropdown.Item>
                         <Dropdown.Item eventKey="6">Dropdown link</Dropdown.Item>
                     </DropdownButton>
-                    <DropdownButton as={ButtonGroup} title="Sort" id="bg-nested-dropdown">
+                    <DropdownButton as={ButtonGroup} title="Sort" id="bg-nested-dropdown" className="margin-r">
                         <Dropdown.Item eventKey="1"></Dropdown.Item>
                         <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
                         <Dropdown.Item eventKey="3">Dropdown link</Dropdown.Item>
@@ -51,7 +40,17 @@ function Auction() {
                         <Dropdown.Item eventKey="6">Dropdown link</Dropdown.Item>
                     </DropdownButton>
                 </ButtonGroup>
-                <Button variant="info" style={{marginLeft : '10px'}}>Reset</Button>{ }
+                <InputGroup className="margin-r">
+                    <InputGroup.Text id="basic-addon1">Finder</InputGroup.Text>
+                    <Form.Control
+                        placeholder="Search NFT Category or Name"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                        style={{ width: '300px' }}
+                    />
+                </InputGroup>
+                <Button variant="info" style={{ marginLeft: '10px' }}>Search</Button>{ }
+                <Button variant="danger" style={{ marginLeft: '10px' }}>Reset</Button>{ }
             </ButtonToolbar>
 
 
