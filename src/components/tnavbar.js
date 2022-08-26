@@ -1,4 +1,4 @@
-import { Container, Navbar, Nav, Button, Form, Modal } from 'react-bootstrap';
+import { Navbar, Nav, Button, Form, Modal, Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import LogInForm from './logIn';
@@ -9,17 +9,16 @@ function TnavBar() {
 
     let navigate = useNavigate();
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" >
             <Container>
-                <Navbar.Brand onClick={() => { navigate('/.') }} style={{ cursor: 'pointer' }}>
+                <Navbar.Brand onClick={() => { navigate('/.') }} className="nav-logo">
                     <img
                         alt=""
-                        src="../public/logo192.png"
+                        src={'https://lh3.googleusercontent.com/nmiG_IrtYnLZ9TVCN9RXQiptWGIugtopMAuHhf-K9sr2T1ZVskR1peZoL1zo9QD0Mm9S_6FoGkM84_Ow1ccyDmXLbyeKAFzt1cuM=w600'}
                         width="30"
                         height="30"
                         className="d-inline-block align-top"
@@ -31,13 +30,13 @@ function TnavBar() {
                     <Nav.Link onClick={() => { navigate('/mynfts') }} className="margin-r">My NFTs </Nav.Link>
                     <Nav.Link onClick={() => { navigate('/explorer') }} className="margin-r">Explorer </Nav.Link>
                     <Nav.Link onClick={() => { navigate('/wallet') }} className="margin-r">Wallet </Nav.Link>
-                    <Nav.Link onClick={() => { navigate('/account') }} className="margin-r">Account </Nav.Link>
+                    {/* <Nav.Link onClick={() => { navigate('/account') }} className="margin-r">Account </Nav.Link> */}
                 </Nav>
 
                 <LogInForm />
                 <div className="margin-r" />
-                <Button variant="primary" onClick={handleShow}>
-                    Contact Us
+                <Button variant="light" onClick={handleShow} style={{ marginRight: '20px' }}>
+                    Sign up
                 </Button>
 
                 <Modal show={show} onHide={handleClose}>

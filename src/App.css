@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.con-area {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .main-img {
   height: 400px;
   background-color: blanchedalmond;
@@ -21,7 +26,7 @@
   height: 95vh;
 }
 
-.contentWrapper{
+.contentWrapper {
   flex: 1;
 }
 
@@ -33,6 +38,18 @@
   width: 100%;
 }
 
+.bg-img {
+  height: 370px;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top : 55px;
+  right : 0;
+  background-image: url('../public/Main_Sample.png');
+  width: 50%;
+
+}
+
 .home-desc {
   height: 500px;
   background-color: #000000;
@@ -40,29 +57,29 @@
   background-position: center;
   position: relative;
   width: 100%;
-  color : white;
+  color: white;
   text-align: center;
 }
 
 .home-box {
-  border : 3px solid white;
+  border: 3px solid white;
   border-radius: 5px;
-  height : 250px;
+  height: 250px;
   margin-top: 20px;
 }
 
 .nft-layout1 {
-  height : 400px;
-  width : 800px;
-  float : left;
+  height: 400px;
+  width: 800px;
+  float: left;
   position: relative;
 
 }
 
 .nft-layout2 {
-  height : 400px;
-  width : 400px;
-  float : right;
+  height: 400px;
+  width: 400px;
+  float: right;
   position: relative;
 
 }
@@ -142,14 +159,14 @@
 
 .auction-title {
   text-align: center;
-  margin : 30px;
-  color : blue;
+  margin: 30px;
+  color: blue;
 }
 
 .auction-subtitle {
   text-align: center;
-  margin : 30px;
-  color : black;
+  margin: 30px;
+  color: black;
 }
 
 .home-title {
@@ -162,30 +179,45 @@
 
 .home-subtitle {
   text-align: center;
-  color : rgb(146, 146, 39);
+  color: rgb(146, 146, 39);
   text-align: center;
   text-shadow: 5px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .home-btn {
- display: flex;
- justify-content: center;
- align-items: center;
- margin-top : 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+}
+
+.home-btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.home-btn3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 100px;
 
 }
 
 .add-btn {
   position: relative;
   left: 50%;
-  top : 5%;
+  top: 5%;
   width: 50px;
   height: 50px;
 
 
 
- }
+}
 
 
 
@@ -223,9 +255,50 @@
 }
 
 .text-r {
-  color : red;
+  color: red;
   position: absolute;
   right: 25px;
   top: 12px;
 }
 
+.nav-logo {
+  cursor: pointer;
+  margin-left: 10px;
+  font-family: SDsamliphopangche_Outline;
+
+}
+
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_icons {
+    justify-content: center;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar_togglebtn{
+    display: block;
+  }
+
+
+}
