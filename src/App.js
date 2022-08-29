@@ -3,14 +3,14 @@ import { useState } from 'react';
 import nftdata from './nftData.js';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import TnavBar from './components/tnavbar';
-import Detail from './views/detail';
-import Home from './views/Home';
+import Detail from './page/detail';
+import Home from './page/Home';
 import Footer from './components/footer';
-import Explorer from './views/explorer';
-import Auction from './views/auction';
-import Wallet from './views/wallet';
-import Account from './views/account';
-import MyNfts from './views/mynfts';
+import Explorer from './page/explorer';
+import Auction from './page/auction';
+import Wallet from './page/wallet';
+import Account from './page/account';
+import MyNfts from './page/mynfts';
 
 
 
